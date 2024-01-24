@@ -54,6 +54,55 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "test git",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let firstName = \"John\"; //string\r",
+							"let lastName = \"Doe\";\r",
+							"\r",
+							"console.log(firstName + ' ' + lastName);\r",
+							"\r",
+							"if (firstName !== 'Mary' || lastName !== 'Doe') {\r",
+							"\r",
+							"console.log('This is NOT Mary!')\r",
+							"\r",
+							"};\r",
+							"\r",
+							"\r",
+							"function sayHello () {\r",
+							"console.log('Hello!');\r",
+							"\r",
+							"};\r",
+							"\r",
+							"\r",
+							"sayHello();\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "httpbin.org/get",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
