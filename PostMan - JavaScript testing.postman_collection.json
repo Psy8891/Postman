@@ -81,7 +81,7 @@
 							"\r",
 							"\r",
 							"sayHello();\r",
-							"\r",
+							"// vamos tentar\r",
 							""
 						],
 						"type": "text/javascript"
